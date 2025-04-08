@@ -1,4 +1,4 @@
-# Modélisation du Risque Client et Optimisation des Décisions Bancaires
+# Modélisation du Risque Client et Optimisation des Décisions Bancaires (Projet en cours)
 
 Ce projet a pour objectif de développer des modèles d'apprentissage automatique afin de prédire la solvabilité des emprunteurs et de segmenter la clientèle pour optimiser les stratégies bancaires. En utilisant des techniques de machine learning, des approches de clustering et de séries temporelles, ce projet permet d'améliorer la gestion du risque client tout en affinant les décisions stratégiques des institutions financières.
 
