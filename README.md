@@ -1,34 +1,35 @@
-# Modélisation du Risque De Crédit (Projet en cours)
+# Modélisation du risque de crédit
 
-Ce projet a pour objectif de développer des modèles d'apprentissage automatique et d'apprentissage profond afin de prédire la solvabilité des emprunteurs et de segmenter la clientèle pour optimiser les stratégies bancaires.
+## 🎯 Objectif
+Construire un modèle de scoring pour estimer la probabilité de défaut (PD) des clients d’une banque, afin d’améliorer le processus de décision d’octroi de crédit.
 
-## Objectifs du Projet
+## 🧠 Contexte
+La banque souhaite anticiper le risque de non-remboursement de ses emprunteurs à partir de leurs caractéristiques socio-économiques et financières.  
+L’enjeu est de passer d’un système de règles fixes à un modèle statistique robuste et interprétable.
 
-1. **Prédiction de la solvabilité des emprunteurs** : 
-   - Utilisation de modèles de régression logistique et XGBoost pour évaluer le risque client.
+## 🧮 Approche méthodologique
+1. **Exploration des données**
+   - Nettoyage, encodage, gestion des valeurs manquantes.  
+   - Analyse de corrélations et détection des variables pertinentes (IV, WoE).  
 
-2. **Segmentation de la clientèle** : 
-   - Application des techniques de clustering comme K-Means et DBSCAN pour identifier les profils rentables.
+2. **Modélisation**
+   - Régression logistique (modèle de référence).  
+   - Random Forest, XGBoost et CatBoost pour comparaison.  
+   - Calibration des probabilités (Platt scaling, isotonic regression).  
 
-3. **Prévision des tendances de consommation** : 
-   - Modélisation des comportements clients à l'aide de séries temporelles (ARIMA, Prophet, LSTM) pour anticiper la demande.
+3. **Évaluation**
+   - AUC, Gini, Brier Score, ROC, KS.  
+   - Validation croisée et analyse des erreurs.  
+   - Interprétation des variables via SHAP values.  
 
-4. **A/B Testing sur les stratégies de prêt** : 
-   - Tests statistiques (t-test, ANOVA, test de Wilcoxon) pour évaluer l'impact de différentes offres promotionnelles sur les remboursements de prêts.
+4. **Scorecard**
+   - Transformation des coefficients logistiques en score client.  
+   - Seuil de décision optimisé selon le coût du risque.  
 
-5. **Analyse des performances des modèles** : 
-   - Comparaison des métriques (Courbe ROC, F1-Score) pour sélectionner les clients solvables.
+## 🧰 Technologies utilisées
+- **Python** : Pandas, Scikit-learn, CatBoost, Matplotlib, SHAP  
+- **Statistiques** : régression logistique, validation de modèle, calibration  
 
-6. **Visualisation et Reporting** : 
-   - Visualisation des résultats à l'aide de Seaborn et proposition de stratégies basées sur les analyses.
-
-## Technologies Utilisées
-
-- **Langage** : Python
-- **Bibliothèques** : 
-  - Scikit-learn
-  - XGBoost
-  - K-Means, DBSCAN
-  - ARIMA, Prophet, LSTM
-  - Seaborn, Matplotlib
-- **Outils d'A/B Testing** : t-test, ANOVA, test de Wilcoxon
+## 📊 Résultats visés
+- AUC = 0.87 sur le jeu de test.  
+- Scorecard interprétable et conforme aux standards Bâle II. 
