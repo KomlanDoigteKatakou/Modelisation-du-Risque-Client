@@ -1,4 +1,4 @@
-# Modélisation du Risque Client et Optimisation des Décisions Bancaires (Projet en cours)
+# Modélisation du Risque De Crédit (Projet en cours)
 
 Ce projet a pour objectif de développer des modèles d'apprentissage automatique et d'apprentissage profond afin de prédire la solvabilité des emprunteurs et de segmenter la clientèle pour optimiser les stratégies bancaires.
 
