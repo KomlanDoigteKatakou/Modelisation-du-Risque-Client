@@ -1,4 +1,4 @@
-# Modélisation du risque de crédit
+# Modélisation du risque de crédit (Projet en cours)
 
 ## 🎯 Objectif
 Construire un modèle de scoring pour estimer la probabilité de défaut (PD) des clients d’une banque, afin d’améliorer le processus de décision d’octroi de crédit.
